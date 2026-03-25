@@ -1,12 +1,20 @@
-# Awesome Open Source AI
-
-> Curated list of the **best truly open-source** (OSI-approved) AI projects, models, tools, and infrastructure.  
-
 <div align="center">
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](https://github.com/yourusername/awesome-open-source-ai/pulls)
-[![Contributors](https://img.shields.io/github/contributors/yourusername/awesome-open-source-ai?style=flat-square)](https://github.com/alvinunreal/awesome-opensource-ai/graphs/contributors)
+<img src="assets/osai.png" alt="Awesome Open Source AI" width="120" />
+
+# Awesome Open Source AI
+
+*A curated list of notable open-source AI models, libraries, infrastructure, and developer tools.*
+
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
+[![Updates](https://img.shields.io/github/last-commit/alvinunreal/awesome-opensource-ai?style=flat-square)](https://github.com/alvinunreal/awesome-opensource-ai/commits/main)
+
+</div>
+
+---
+<div align="center">
+
+**[ Explore the List ](#-contents)** • **[ Submission Guidelines ](#contributing)** • **[ License ](#license)**
 
 </div>
 
@@ -78,12 +86,13 @@
 
 #### Large Language Models (Base + Chat)
 
-- **[Llama 4 (Meta)](https://github.com/meta-llama/llama)** ![GitHub stars](https://img.shields.io/github/stars/meta-llama/llama?style=social) - Latest flagship open LLM series (8B–405B). Exceptional reasoning, multilingual, and long-context performance.
-- **[Qwen 2.5 / Qwen3 (Alibaba)](https://github.com/QwenLM/Qwen)** ![GitHub stars](https://img.shields.io/github/stars/QwenLM/Qwen?style=social) - State-of-the-art Chinese + English models (0.5B–72B). Tops many leaderboards for coding, math, and instruction following.
-- **[DeepSeek-V3 / R1 (DeepSeek)](https://github.com/deepseek-ai/DeepSeek-V3)** ![GitHub stars](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-V3?style=social) - Mixture-of-Experts model with 671B total parameters (37B active). Insanely strong at reasoning and math.
-- **[Gemma 3 (Google)](https://github.com/google/gemma)** ![GitHub stars](https://img.shields.io/github/stars/google/gemma?style=social) - Lightweight yet powerful series (2B–27B). Excellent on-device and research use.
-- **[Mistral Large / Nemo / Small (Mistral AI)](https://github.com/mistralai)** - High-performance European models with strong multilingual and tool-use capabilities.
-- **[Phi-4 / Phi-3.5 (Microsoft)](https://github.com/microsoft/Phi-3)** ![GitHub stars](https://img.shields.io/github/stars/microsoft/Phi-3?style=social) - Small but mighty models (3.8B–14B) optimized for edge devices and on-device inference.
+- **[Llama 4 (Meta)](https://github.com/meta-llama/llama)** ![GitHub stars](https://img.shields.io/github/stars/meta-llama/llama?style=social) - Latest flagship open LLM series (8B–405B) with exceptional reasoning, multilingual support, and long-context performance.
+- **[Qwen3.5 (Alibaba)](https://github.com/QwenLM/Qwen)** ![GitHub stars](https://img.shields.io/github/stars/QwenLM/Qwen?style=social) - State-of-the-art open series spanning from small to frontier-scale models, consistently strong in coding, math, and instruction following.
+- **[DeepSeek-V3.2 / R1 (DeepSeek)](https://github.com/deepseek-ai/DeepSeek-V3)** ![GitHub stars](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-V3?style=social) - Mixture-of-Experts family with exceptional reasoning, math, and efficient large-scale inference.
+- **[Gemma 3 (Google)](https://github.com/google/gemma)** ![GitHub stars](https://img.shields.io/github/stars/google/gemma?style=social) - Lightweight yet powerful open models with excellent efficiency for on-device, research, and production use.
+- **[Mistral Large / Nemo / Small](https://github.com/mistralai)** - High-performance model family with strong multilingual capability, tool use, and efficient deployment profiles.
+- **[Phi-4 / Phi-3.5 (Microsoft)](https://github.com/microsoft/Phi-3)** ![GitHub stars](https://img.shields.io/github/stars/microsoft/Phi-3?style=social) - Small but highly capable models optimized for reasoning, edge devices, and on-device inference.
+- **[GLM-5 (Zhipu AI)](https://github.com/THUDM/GLM-4)** ![GitHub stars](https://img.shields.io/github/stars/THUDM/GLM-4?style=social) - Strong open model line with solid coding, reasoning, and agentic-task performance.
 
 #### Coding & Reasoning Models
 
@@ -408,8 +417,9 @@
 
 ### 🖥️ 12. User Interfaces & Self-hosted Platforms
 
-#### Local AI Chat UIs
+#### Local AI Chat UIs & Personal Assistants
 
+- **[OpenClaw](https://github.com/openclaw/openclaw)** ![GitHub stars](https://img.shields.io/github/stars/openclaw/openclaw?style=social) - Local-first personal AI assistant with multi-channel integrations and full agentic task execution.
 - **[Open WebUI](https://github.com/open-webui/open-webui)** ![GitHub stars](https://img.shields.io/github/stars/open-webui/open-webui?style=social) - Most popular self-hosted ChatGPT-style interface.
 - **[LobeChat](https://github.com/lobehub/lobe-chat)** ![GitHub stars](https://img.shields.io/github/stars/lobehub/lobe-chat?style=social) - Sleek modern chat UI.
 - **[LibreChat](https://github.com/danny-avila/LibreChat)** ![GitHub stars](https://img.shields.io/github/stars/danny-avila/LibreChat?style=social) - Feature-packed multi-LLM interface.
