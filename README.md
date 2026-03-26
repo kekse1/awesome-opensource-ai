@@ -524,6 +524,14 @@
 - **[LangChain Academy](https://academy.langchain.com)** - Free courses on agents and RAG.
 - **[ComfyUI Examples & Workflows](https://github.com/Comfy-Org/example_workflows)** ![GitHub stars](https://img.shields.io/github/stars/Comfy-Org/example_workflows?style=social) - Massive collection of generative media workflows.
 
+#### Starter Projects & Examples
+
+- **[PyTorch Examples](https://github.com/pytorch/examples)** ![GitHub stars](https://img.shields.io/github/stars/pytorch/examples?style=social) - Official tutorials: image classification, NLP, reinforcement learning.
+- **[TensorFlow Tutorials](https://github.com/tensorflow/docs/tree/master/site/en/tutorials)** - Official guides for beginners to advanced users.
+- **[Hugging Face Transformers Notebooks](https://github.com/huggingface/notebooks)** ![GitHub stars](https://img.shields.io/github/stars/huggingface/notebooks?style=social) - Run Transformers, Datasets, and more in Colab.
+- **[Stable Diffusion Examples](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features)** - Popular WebUI with extensive documentation.
+- **[Deep Learning Examples (NVIDIA)](https://github.com/NVIDIA/DeepLearningExamples)** ![GitHub stars](https://img.shields.io/github/stars/NVIDIA/DeepLearningExamples?style=social) - Production-quality reference implementations.
+
 ---
 
 ## Contributing
