@@ -108,6 +108,10 @@
 - **[xFormers](https://github.com/facebookresearch/xformers)** ![GitHub stars](https://img.shields.io/github/stars/facebookresearch/xformers?style=social) - Optimized transformer building blocks and attention operators for PyTorch.
 - **[PyTorch Lightning](https://github.com/Lightning-AI/lightning)** ![GitHub stars](https://img.shields.io/github/stars/Lightning-AI/lightning?style=social) - High-level wrapper for PyTorch that removes boilerplate and adds best practices.
 - **[ONNX Runtime](https://github.com/microsoft/onnxruntime)** ![GitHub stars](https://img.shields.io/github/stars/microsoft/onnxruntime?style=social) - High-performance inference and training for ONNX models across hardware.
+- **[einops](https://github.com/arogozhnikov/einops)** ![GitHub stars](https://img.shields.io/github/stars/arogozhnikov/einops?style=social) - Flexible, powerful tensor operations for readable and reliable code. Supports PyTorch, JAX, TensorFlow, NumPy, MLX.
+- **[safetensors](https://github.com/huggingface/safetensors)** ![GitHub stars](https://img.shields.io/github/stars/huggingface/safetensors?style=social) - Simple, safe way to store and distribute tensors. Fast, secure alternative to pickle for model serialization.
+- **[torchmetrics](https://github.com/Lightning-AI/torchmetrics)** ![GitHub stars](https://img.shields.io/github/stars/Lightning-AI/torchmetrics?style=social) - Machine learning metrics for distributed, scalable PyTorch applications. 80+ metrics with built-in distributed synchronization.
+- **[torchao](https://github.com/pytorch/ao)** ![GitHub stars](https://img.shields.io/github/stars/pytorch/ao?style=social) - PyTorch native quantization and sparsity for training and inference. Drop-in optimizations for production deployment.
 
 ---
 
