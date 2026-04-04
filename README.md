@@ -442,6 +442,11 @@
 - **[Phoenix (Arize)](https://github.com/Arize-ai/phoenix)** ![GitHub stars](https://img.shields.io/github/stars/Arize-ai/phoenix?style=social) - AI observability & evaluation platform.
 - **[Evidently](https://github.com/evidentlyai/evidently)** ![GitHub stars](https://img.shields.io/github/stars/evidentlyai/evidently?style=social) - ML & LLM monitoring framework.
 - **[Opik (Comet)](https://github.com/comet-ml/opik)** ![GitHub stars](https://img.shields.io/github/stars/comet-ml/opik?style=social) - Production-ready LLM evaluation platform.
+- **[LiteLLM](https://github.com/BerriAI/litellm)** ![GitHub stars](https://img.shields.io/github/stars/BerriAI/litellm?style=social) - AI Gateway to call 100+ LLM APIs in OpenAI format with unified cost tracking, guardrails, load balancing, and logging.
+- **[OpenLIT](https://github.com/openlit/openlit)** ![GitHub stars](https://img.shields.io/github/stars/openlit/openlit?style=social) - OpenTelemetry-native LLM observability platform with GPU monitoring, evaluations, prompt management, and guardrails.
+- **[OpenLLMetry (Traceloop)](https://github.com/traceloop/openllmetry)** ![GitHub stars](https://img.shields.io/github/stars/traceloop/openllmetry?style=social) - Open-source observability for GenAI/LLM applications based on OpenTelemetry with 25+ integration backends.
+- **[Agenta](https://github.com/Agenta-AI/agenta)** ![GitHub stars](https://img.shields.io/github/stars/Agenta-AI/agenta?style=social) - Open-source LLMOps platform combining prompt playground, prompt management, LLM evaluation, and observability.
+- **[Helicone](https://github.com/helicone/helicone)** ![GitHub stars](https://img.shields.io/github/stars/helicone/helicone?style=social) - Open-source LLM observability with request logging, caching, rate limiting, and cost analytics.
 
 #### Guardrails & Safety Tools
 
