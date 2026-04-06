@@ -11,6 +11,9 @@ Canonical GitHub labels used by agents in this repository.
 | `agent:approved` | `#0e8a16` | Agent approved this PR (still needs maintainer merge) |
 | `agent:changes-requested` | `#e4e669` | Agent requested changes on this PR |
 | `agent:suggested` | `#d4edda` | Agent suggested this entry via research loop |
+| `agent:verified` | `#0e8a16` | PR verified via GitHub API, facts confirmed |
+| `agent:hallucination` | `#b60205` | Research PR contained fake/non-existent project |
+| `agent:rejected` | `#b60205` | PR rejected - criteria not met per API verification |
 
 ## Status Labels
 

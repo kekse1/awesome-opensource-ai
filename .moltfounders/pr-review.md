@@ -101,11 +101,71 @@ Be specific:
 
 An `agent:approved` label means the PR passed automated review. **Only the maintainer merges.** The agent never merges PRs directly.
 
-## Edge Cases
+## Resolution Phase (NEW: Closed-Loop Verification)
 
-- **PR has merge conflicts:** Already handled as a skip condition above - never approve a PR with conflicts.
-- **PR fixes a broken link only:** Fast-track approve, these are unambiguously good.
-- **Author disagrees with feedback:** Acknowledge their perspective, stand firm on objective criteria (license, activity), label `needs-human` for subjective disputes.
-- **PR has been open >30 days with no author response:** Follow staleness rules in `staleness.md`.
-- **PR adds a commercial product with an "open-source" tier:** Reject unless the core product is fully open-source. Freemium ≠ open-source.
-- **PR adds something already on a sister list (e.g. awesome-llm):** Not a disqualifier - if it fits this list's scope and quality bar, it's fine.
+After completing review steps above, you MUST take one of these actions. **No PRs should be left pending with just comments.**
+
+### Path 1: Verify & Merge (When ALL criteria confirmed via API)
+
+Before merging, verify these facts directly via GitHub API (do NOT trust PR descriptions):
+
+| Check | Command | Pass Criteria |
+|-------|---------|---------------|
+| Stars | `gh api repos/{owner}/{repo}` | ≥1000 per API |
+| Activity | `gh api repos/{owner}/{repo}` | pushed_at within 6 months |
+| License | `gh api repos/{owner}/{repo}/contents/LICENSE` | OSI-approved per CONTRIBUTING.md |
+| Duplicate | Search README for `{owner}/{repo}` | Not already listed |
+| Format | `python3 tools/validate_awesome.py --skip-remote` | No errors |
+
+If ALL checks pass:
+1. Label `agent:verified`
+2. Run: `gh pr merge --squash --delete-branch`
+3. Comment: "Verified via API. Merged."
+
+### Path 2: Fix & Merge (Minor issues only)
+
+If ONLY these issues (no factual errors):
+- Wrong category placement
+- Badge format incorrect
+- Description too long/marketing-heavy
+- Missing validator fixes
+
+Then:
+1. Push fix commit to PR branch (or use `gh pr edit` for description changes)
+2. Re-run validator
+3. If clean: `gh pr merge --squash --delete-branch`
+4. Comment what was fixed
+
+### Path 3: Close (Hallucination or criteria not met)
+
+If ANY of these found:
+- Project doesn't exist (404 from GitHub API)
+- Stars < 1000 per API (not what PR claimed)
+- License doesn't meet criteria per API
+- Last commit > 6 months per API
+- Duplicate already exists in README
+- Unfixable structural issues
+
+Then:
+1. Label `agent:hallucination` or `agent:rejected`
+2. Comment with SPECIFIC factual mismatch: "Closing: API shows 847 stars (claimed 1200). License is GPL-2.0 (not OSI-approved per our criteria)."
+3. Run: `gh pr close --comment "[reason]. Research loop will retry this category."`
+
+### Path 4: Escalate (Rare - API failure or ambiguity)
+
+Only if:
+- GitHub API returns errors/rate limit
+- Ambiguous case requiring maintainer judgment
+- License unclear even after checking
+
+Then:
+- Label `needs-human`
+- Comment explaining the ambiguity
+- **Do NOT leave pending** - if API unavailable, close with note to retry
+
+## Edge Cases (Updated)
+
+- **PR has merge conflicts:** Close it. Comment: "Closing due to conflicts. Research loop will recreate fresh."
+- **Partial hallucination** (3 projects, 1 fake): Remove fake project via commit, merge remaining with comment.
+- **API rate limit:** Close with `needs-human` label and note to retry tomorrow.
+- **Research PR updates after review started:** Re-verify from scratch.
