@@ -72,6 +72,9 @@ Process agent PRs first, then community PRs.
 Skip all draft PRs.
 Use comments plus canonical labels only for review signaling.
 Auto-merge only agent PRs that still satisfy the README.md-only, single-category, non-structural allowlist and pass all required validation and GitHub API fact checks.
+If one or more agent PRs are merged, wait for the resulting main validation workflow/checks and confirm they complete successfully with no errors.
+When multiple agent PRs are eligible, merge them one at a time and confirm main CI is green after each merge before merging the next one.
+If main CI fails or does not complete cleanly after a merge, stop unattended merging and escalate with needs-human.
 For temporary infra failures on agent PRs: comment once, retry on later runs, pause after 3 failures with needs-human, and resume only after meaningful human activity.
 Follow the documented rules for conflicts, overlaps, fixes, close-or-leave-open outcomes, and community PR handling exactly." \
   --delivery announce \

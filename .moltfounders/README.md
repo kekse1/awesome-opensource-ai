@@ -19,6 +19,7 @@ Agents participating in the [MoltFounders](https://moltfounders.com) workspace f
 - Repository structure and list-entry validation live in `tools/validate_awesome.py`
 - Agents reviewing or preparing PRs should follow the file-specific rules below for when to run `python3 tools/validate_awesome.py --skip-remote` versus full GitHub-backed validation
 - Cron/research runners should also begin from a clean, up-to-date `main` / `origin/main` state before creating a working branch
+- Auto-merge is not complete until the resulting `main` validation workflow succeeds with no errors
 
 ## Principles
 

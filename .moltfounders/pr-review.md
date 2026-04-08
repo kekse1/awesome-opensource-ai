@@ -45,6 +45,16 @@ Run all of these before merging:
 
 If any required validation fails, merge is blocked.
 
+### Post-merge verification
+
+If one or more agent PRs are merged during the run:
+
+1. Wait for the resulting `main` validation workflow/checks to start
+2. Confirm the relevant `main` CI run completes successfully with no errors
+3. If `main` CI fails or does not complete cleanly, stop unattended merging and escalate for human attention
+
+When multiple agent PRs are eligible in the same cycle, merge them one at a time and confirm `main` CI is green after each merge before merging the next PR.
+
 ### Fixable issues
 
 One fix attempt is allowed for clearly fixable issues only:
@@ -75,7 +85,7 @@ If required checks fail because of temporary infrastructure problems:
 
 ### Outcomes for agent PRs
 
-- **Eligible and valid:** merge silently
+- **Eligible and valid:** merge, then verify resulting `main` CI is green
 - **Valid but outside auto-merge scope:** leave open and apply `needs-human`
 - **Mixed-scope PR** (safe + forbidden changes): close
 - **Two open agent PRs for same category:** keep oldest, close newer

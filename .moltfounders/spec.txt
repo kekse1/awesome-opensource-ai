@@ -416,3 +416,12 @@ Answer: Yes.
 
 Q134. Should PR review keep its own separate state file for retry counts / paused PR tracking?
 Answer: No.
+
+Q135. After an agent PR merges, should unattended review confirm the resulting `main` CI is green before considering the merge successful?
+Answer: Yes.
+
+Q136. If multiple agent PRs are eligible in one review cycle, should automation merge them all immediately or wait for `main` CI after each merge?
+Answer: Merge them one at a time and require green `main` CI after each merge before merging the next.
+
+Q137. If `main` CI fails after an unattended merge, what should happen?
+Answer: Stop unattended merging and escalate for human attention.
