@@ -610,6 +610,7 @@
 #### Scientific AI & Drug Discovery
 
 - **[Boltz](https://github.com/jwohlwend/boltz)** ![GitHub stars](https://img.shields.io/github/stars/jwohlwend/boltz?style=social) - Open-source biomolecular interaction prediction models. Boltz-1 was the first fully open source model to approach AlphaFold3 accuracy; Boltz-2 adds binding affinity prediction for drug discovery. MIT licensed.
+- **[Protenix](https://github.com/bytedance/Protenix)** ![GitHub stars](https://img.shields.io/github/stars/bytedance/Protenix?style=social) - High-accuracy open-source biomolecular structure prediction model from ByteDance. First fully open-source model to outperform AlphaFold3 across diverse benchmarks with Apache 2.0 licensing for both academic and commercial use.
 - **[OpenFold](https://github.com/aqlaboratory/openfold)** ![GitHub stars](https://img.shields.io/github/stars/aqlaboratory/openfold?style=social) - Trainable PyTorch reproduction of AlphaFold2. Complete open-source pipeline for protein structure prediction with competitive accuracy to the original. Apache 2.0 licensed.
 
 #### Medical Imaging & Healthcare AI
